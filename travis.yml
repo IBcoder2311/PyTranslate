@@ -1,4 +1,4 @@
-os: linux
+os: windows
 dist: focal
 language: python
 
@@ -44,4 +44,5 @@ install:
   - gem install dpl --pre
   - dpl releases --token $GITHUB_TOKEN --file "bin/mortgagecalculator-2.3-arm64-v8a-debug.apk" --tag_name "v.2.3"
 script:
+
   - echo "OK"
